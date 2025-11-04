@@ -53,7 +53,7 @@ importers:
         version: 8.46.3(eslint@8.57.1)(typescript@5.9.3)
       '@vitejs/plugin-react-swc':
         specifier: ^3.11.0
-        version: 3.11.0(vite@7.1.12)
+        version: 3.11.0(vite@6.4.1)
       eslint:
         specifier: ^8.45.0
         version: 8.57.1
@@ -70,8 +70,8 @@ importers:
         specifier: ^5.9.2
         version: 5.9.3
       vite:
-        specifier: ^7.1.5
-        version: 7.1.12
+        specifier: ^6.0.0
+        version: 6.4.1
 
 packages:
 
@@ -2611,19 +2611,19 @@ packages:
       typescript:
         optional: true
 
-  vite@7.1.12:
-    resolution: {integrity: sha512-ZWyE8YXEXqJrrSLvYgrRP7p62OziLW7xI5HYGWFzOvupfAlrLvURSzv/FyGyy0eidogEM3ujU+kUG1zuHgb6Ug==}
-    engines: {node: ^20.19.0 || >=22.12.0}
+  vite@6.4.1:
+    resolution: {integrity: sha512-+Oxm7q9hDoLMyJOYfUYBuHQo+dkAloi33apOPP56pzj+vsdJDzr+j1NISE5pyaAuKL4A3UD34qd0lx5+kfKp2g==}
+    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
-      '@types/node': ^20.19.0 || >=22.12.0
+      '@types/node': ^18.0.0 || ^20.0.0 || >=22.0.0
       jiti: '>=1.21.0'
-      less: ^4.0.0
+      less: '*'
       lightningcss: ^1.21.0
-      sass: ^1.70.0
-      sass-embedded: ^1.70.0
-      stylus: '>=0.54.8'
-      sugarss: ^5.0.0
+      sass: '*'
+      sass-embedded: '*'
+      stylus: '*'
+      sugarss: '*'
       terser: ^5.16.0
       tsx: ^4.8.1
       yaml: ^2.4.2
@@ -4426,11 +4426,11 @@ snapshots:
     dependencies:
       '@vanilla-extract/css': 1.17.4
 
-  '@vitejs/plugin-react-swc@3.11.0(vite@7.1.12)':
+  '@vitejs/plugin-react-swc@3.11.0(vite@6.4.1)':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.27
       '@swc/core': 1.15.0
-      vite: 7.1.12
+      vite: 6.4.1
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -5794,7 +5794,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  vite@7.1.12:
+  vite@6.4.1:
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
