@@ -16,7 +16,7 @@ import { SuiClient, getFullnodeUrl } from "@mysten/sui/client";
 const queryClient = new QueryClient();
 
 registerWalletConnectWallet({
-  projectId: "Your Project ID",
+  projectId: "f159157f4c1712474ef534f308390772",
   getClient: (chain) =>
     new SuiClient({ network: chain, url: getFullnodeUrl(chain) }),
   metadata: {
